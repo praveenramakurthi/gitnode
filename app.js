@@ -9,3 +9,8 @@ app.listen(8080,()=>{
 app.get("/home",(req, res)=>{
     res.send('<h1>welcome to the home page<h1/>');
 })
+
+app.post("/home",(req, res)=>{
+    console.log("Browser requested");
+    res.send('<h1>Post request<h1/>');
+})
